@@ -1,0 +1,29 @@
+pipeline {
+    agent any
+    stages {
+        stage('build') {
+            steps {
+                echo 'ready for build projuct'
+            
+            }
+        }
+        stage('Quality Assurance') {
+            steps {
+                echo "ready for QA test"
+                
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'ready for deploy'
+                
+            }
+        }
+        stage('production') {
+            steps {
+                echo 'ready for production to implement the new project'
+                
+            }
+        }
+    }
+}
